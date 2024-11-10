@@ -6,24 +6,16 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 20:18:39 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/01 14:34:40 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/10 13:36:19 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z')
-		|| (c >= '0' && c <= '9'))
+	if (ft_isdigit(c) || ft_isalpha(c))
 		return (1);
 	else
 		return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("%d\n", ft_isalnum('^'));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 20:33:03 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/06 16:55:21 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/10 13:38:09 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isprint(int c)
 		return (0);
 	return (1);
 }
-
-// int	main(void)
-// {
-// 	printf("%d\n", ft_isprint(32));
-// 	return (0);
-// }

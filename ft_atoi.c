@@ -6,9 +6,11 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:19:15 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/06 12:15:22 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:10:52 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static const char	*handle_whitespaces_and_sign(const char *ptr, int *sign)
 {
@@ -26,9 +28,9 @@ static const char	*handle_whitespaces_and_sign(const char *ptr, int *sign)
 
 int	ft_atoi(const char *ptr)
 {
-	long	total;
-	int		sign;
-	long	tmp;
+	long long	total;
+	int			sign;
+	long long	tmp;
 
 	total = 0;
 	sign = 1;
@@ -36,8 +38,6 @@ int	ft_atoi(const char *ptr)
 	ptr = handle_whitespaces_and_sign(ptr, &sign);
 	while (*ptr >= '0' && *ptr <= '9')
 	{
-		if (sign == -1 && tmp == 214748364 && (*ptr - '0') == 8)
-			return (-2147483648);
 		total = (total * 10) + (*ptr - '0');
 		if (total < tmp && sign == 1)
 			return (-1);
@@ -46,5 +46,5 @@ int	ft_atoi(const char *ptr)
 		ptr++;
 		tmp = total;
 	}
-	return ((int)(total * sign));
+	return (total * sign);
 }

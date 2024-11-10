@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 13:21:07 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/06 17:07:27 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:57:24 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,7 +112,7 @@ char	**ft_split(const char *s, char c)
 
 // int	main(void)
 // {
-// 	char *s = ",,,,,anas,ra f i k,,,,,,h os s am,i,dfgodjfo,,,zakaria";
+// 	char *s = NULL;
 // 	char **tokens = ft_split(s, ',');
 // 	//printf("%d", count_words(s, ','));
 // 	int i; 

@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 20:31:56 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/01 14:35:01 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/10 13:38:01 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("%d", ft_isdigit('a'));
-// 	return (0);
-// }

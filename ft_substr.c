@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:17:53 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/01 12:50:22 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:02:35 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,11 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	substr[len] = '\0';
 	return (substr);
 }
+
+// int main()
+// {
+// 	printf("%s\n", ft_substr("aymane", 2, -1));	
+// }
 
 // int main(void)
 // {
