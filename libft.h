@@ -6,12 +6,12 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 19:53:14 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/10 12:02:55 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:05:43 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBFT_H
+# define LIBFT_H 
 # include <stdlib.h>
 # include <stddef.h>
 # include <stdio.h>

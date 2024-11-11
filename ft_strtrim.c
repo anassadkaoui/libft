@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:20:33 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/06 18:59:56 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:30:44 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,17 +54,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i;
 	int		e;
 
+	if (s1 == NULL || set == NULL)
+		return (NULL);
 	i = 0;
 	while (s1[i])
 	{
-		if (!isin(s1[i], set))
+		if (isin(s1[i], set) == 0)
 			break ;
 		i++;
 	}
 	e = ft_strlen(s1) - 1;
 	while (e > i)
 	{
-		if (!isin(s1[e], set))
+		if (isin(s1[e], set) == 0)
 			break ;
 		e--;
 	}
@@ -75,13 +77,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, i, (e - i) + 1));
 }
 
-// int main()
-// {
-//     char *str1;
-//     str1 = "#bc#cbabdoulah#bc#cb#bc";
-//     char str2[] = "#bc";
-//     //char *str;
-//    // str = TrimChar(str1, 'h');
-//    // printf("%s\n", TrimChar(str1, 'h'));
-//     printf ("%s\n", ft_strtrim(str1, str2));
-// }
+int main(void)
+{
+	ft_strtrim("#######", "#");
+}

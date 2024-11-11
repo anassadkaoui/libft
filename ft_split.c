@@ -6,20 +6,24 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 13:21:07 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/10 11:57:24 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 13:40:55 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	frr(char **s, int i)
+static void	*free_all(char **arr)
 {
-	while (i > 0)
+	int		i;
+
+	i = 0;
+	while (arr[i])
 	{
-		free(s[i - 1]);
-		i--;
+		free(arr[i]);
+		i++;
 	}
-	free(s);
+	free(arr);
+	return (NULL);
 }
 
 static unsigned int	count_words(char const *s, char c)
@@ -71,7 +75,7 @@ static char	**re(const char *s, char c, char **res, size_t i)
 		res[i] = (char *)malloc((get_len(s, c) + 1) * sizeof(char));
 		if (!res[i])
 		{
-			frr(res, i);
+			free_all(res);
 			return (NULL);
 		}
 		while (*s != c && *s)
@@ -109,14 +113,3 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	return (re(s, c, res, 0));
 }
-
-// int	main(void)
-// {
-// 	char *s = NULL;
-// 	char **tokens = ft_split(s, ',');
-// 	//printf("%d", count_words(s, ','));
-// 	int i; 
-// 	i = 0;
-// 	while (tokens[i] != NULL)
-// 	  	printf("%s\n", tokens[i++]); 
-// }

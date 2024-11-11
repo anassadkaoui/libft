@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 13:16:48 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/10/31 13:18:49 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 11:57:48 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,11 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (fd < 0 || s == NULL)
+		return ;
 	while (s[i] != '\0')
 	{
 		write(fd, &s[i], 1);
 		i++;
 	}
 }
-
-// int main() {
-//     ft_putstr_fd("Hello, world!", 1);  // Writes to standard output
-//     return 0;
-// }

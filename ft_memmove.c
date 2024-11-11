@@ -6,56 +6,35 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 21:26:20 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/10 20:35:18 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 08:53:37 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-static void	backward_cpy(size_t n, unsigned char *destination,
-const unsigned char *source)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	while (n > 0)
+	size_t	i;
+	char	*s;
+	char	*d;
+
+	if (len == 0)
+		return ((void *)dst);
+	if (!dst && !src)
+		return (NULL);
+	if (src == dst)
+		return ((void *)src);
+	d = (char *)dst;
+	s = (char *)src;
+	i = 0;
+	if (src > dst)
+		return (ft_memcpy(dst, src, len));
+	i = len - 1;
+	while (i > 0)
 	{
-		n--;
-		destination[n] = source[n];
+		d[i] = s[i];
+		i--;
 	}
+	d[i] = s[i];
+	return (dst);
 }
-
-void	*ft_memmove(void *dest, const void *src, size_t n)
-{
-	unsigned char		*destination;
-	const unsigned char	*source;
-	size_t				i;
-
-	destination = (unsigned char *)dest;
-	source = (unsigned char *)src;
-	if (destination == source || n == 0)
-		return ((unsigned char *)destination);
-	if (destination < source)
-	{
-		i = 0;
-		while (i < n)
-		{
-			destination[i] = source[i];
-			i++;
-		}
-	}
-	else
-		backward_cpy(n, destination, source);
-	return ((unsigned char *)destination);
-}
-
-// int main(void)
-// {
-// 	char str[] = "Hello World !";
-// 	ft_memmove(str + 4, str, 4);
-// 	//memmove (str + 4, str, 10);
-// 	int i = 0;
-// 	while (i < 13)
-// 	{
-// 		printf("%c\n", str[i]);
-// 		i++;
-// 	}
-// }

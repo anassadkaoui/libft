@@ -6,20 +6,20 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:13:44 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/05 14:19:22 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:48:15 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
 
-	if (*needle == '\0')
+	if (haystack == NULL && len == 0)
+		return (NULL);
+	if ((char)*needle == '\0')
 		return ((char *)haystack);
 	i = 0;
 	while (haystack[i] != '\0' && i < len)

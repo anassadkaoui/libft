@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:07:24 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/01 18:38:25 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:54:07 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 	}
 	return (ft_strlen((char *)src));
 }
-
-// int main(void)
-// {
-// 	char src[] = "anas";
-// 	char dest[] = "anwasadkaoui";
-// 	ft_strlcpy(dest, src, 0);
-// 	printf("%s", dest);
-// }

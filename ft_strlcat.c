@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:05:23 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/10 12:02:04 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:53:55 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (dl + sl);
 }
-
-// int main()
-// {
-// 	printf("%zu\n", ft_strlcat(NULL, "hhhh", 0));
-// }

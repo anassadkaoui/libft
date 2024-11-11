@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:10:13 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/10/31 22:40:04 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:22:37 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[length] = '\0';
 	return (result);
 }
-
-// int main() {
-//     char *original = "hello";
-//     char *result = ft_strmapi(original, uppercase_even);
-
-//     if (result != NULL) {
-//         printf("Original: %s\n", original);
-//         printf("Transformed: %s\n", result);
-//         free(result);
-//     }
-
-//     return 0;
-// }

@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:51:18 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/10/31 12:52:18 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/11 11:40:50 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
+	if (fd < 0 || s == NULL)
+		return ;
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		write(fd, &s[i], 1);
 		i++;
