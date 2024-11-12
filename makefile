@@ -21,23 +21,22 @@ BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 OBJS = $(SRCS:.c=.o)
 HEADER = libft.h
 
-.PHONY: clean
-
 all: $(NAME)
 
 bonus : $(BONUS_OBJS)
-	$(AR) $(NAME) $^
 
 $(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
+	$(AR) $(NAME) $@
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY: clean fclean

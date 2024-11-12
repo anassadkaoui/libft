@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:20:33 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 18:30:44 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 09:16:11 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,9 +75,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (e == i)
 		return (handle_e_equal_i(s1, i));
 	return (ft_substr(s1, i, (e - i) + 1));
-}
-
-int main(void)
-{
-	ft_strtrim("#######", "#");
 }

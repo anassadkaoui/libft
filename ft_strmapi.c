@@ -6,20 +6,11 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:10:13 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 14:22:37 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:50:31 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> 
-#include <stddef.h>
-#include <stdio.h>
-
-// char	uppercase_even(unsigned int i, char c) {
-//     if (i % 2 == 0 && c >= 'a' && c <= 'z') {
-//         return c - ('a' - 'A');
-//     }
-//     return c;
-// }
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,11 +6,11 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:09:25 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 17:15:17 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:50:21 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

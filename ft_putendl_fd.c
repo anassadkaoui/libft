@@ -6,11 +6,11 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:51:18 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 11:40:50 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:49:31 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -26,8 +26,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-// int main() {
-//     ft_putendl_fd("Hello, world!", 1);  // Writes to standard output
-//     return 0;
-// }

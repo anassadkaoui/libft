@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 13:08:49 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/10 18:54:21 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:46:55 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,3 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (lst);
 }
-
-// int main(void)
-// {
-// 	t_list *lst = NULL;
-// 	t_list *new_element;
-
-// 	new_element = ft_lstnew("first");
-// 	ft_lstadd_back(&lst, new_element);
-
-// 	new_element = ft_lstnew("second");
-// 	ft_lstadd_back(&lst, new_element);
-
-// 	new_element = ft_lstnew("third");
-// 	ft_lstadd_back(&lst, new_element);
-// 	printf("%s", ft_lstlast(lst)->content);
-// }

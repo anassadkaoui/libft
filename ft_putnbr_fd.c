@@ -6,12 +6,11 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 13:02:29 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 11:52:23 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:49:15 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 static int	cpy_digits(int n, int i, char *buffer)
 {

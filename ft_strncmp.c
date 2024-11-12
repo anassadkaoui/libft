@@ -6,13 +6,11 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:12:38 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 17:15:28 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 12:50:38 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
-#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

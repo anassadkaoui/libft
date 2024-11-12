@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:17:53 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 18:47:01 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/12 09:44:42 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ static char	*ft_strncpy(char *dest, const char *src, size_t n)
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
 	while (i < n)
 	{
 		dest[i] = '\0';
@@ -30,27 +31,30 @@ static char	*ft_strncpy(char *dest, const char *src, size_t n)
 	return (dest);
 }
 
+static char	*empty(void)
+{
+	char	*s;
+
+	s = malloc(1);
+	if (!s)
+		return (NULL);
+	s[0] = '\0';
+	return (s);
+}
+
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	size_t	str_len;
 	char	*substr;
 
 	if (s == NULL)
 		return (NULL);
-	str_len = ft_strlen((char *)s);
-	if (start >= str_len)
-	{
-		substr = malloc(1);
-		if (substr)
-			substr[0] = '\0';
-		return (substr);
-	}
-	if (start + len > str_len)
-		len = str_len - start;
+	if (start >= ft_strlen(s))
+		return (empty());
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
 	substr = malloc(len + 1);
 	if (!substr)
 		return (NULL);
 	ft_strncpy(substr, s + start, len);
-	substr[len] = '\0';
 	return (substr);
 }
