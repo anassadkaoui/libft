@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 16:17:07 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/12 12:46:32 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/16 15:28:17 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list	*tmp;
+	t_list	*current;
 
 	if (lst == NULL || del == NULL)
 		return ;
 	while (*lst)
 	{
-		tmp = *lst;
-		(*del)((*lst)->content);
+		current = *lst;
 		*lst = (*lst)->next;
-		free(tmp);
+		ft_lstdelone(current, del);
 	}
 	*lst = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:05:23 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 16:53:55 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:21:26 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	j = 0;
 	if (dstsize != 0)
 	{
-		while (i < dstsize -1 && src[j])
+		while (i < (dstsize - 1) && src[j])
 		{
 			dst[i] = src[j];
 			i++;

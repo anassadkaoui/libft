@@ -6,17 +6,14 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 14:06:17 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 14:40:30 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:50:45 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_strcat(char *dest, const char *src)
+static void	ft_strcat(char *dest, const char *src)
 {
-	char	*start;
-
-	start = dest;
 	while (*dest)
 		dest++;
 	while (*src)
@@ -26,14 +23,10 @@ static char	*ft_strcat(char *dest, const char *src)
 		src++;
 	}
 	*dest = '\0';
-	return (start);
 }
 
-static char	*ft_strcpy(char *dest, const char *src)
+static void	ft_strcpy(char *dest, const char *src)
 {
-	char	*start;
-
-	start = dest;
 	while (*src)
 	{
 		*dest = *src;
@@ -41,7 +34,6 @@ static char	*ft_strcpy(char *dest, const char *src)
 		src++;
 	}
 	*dest = '\0';
-	return (start);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
