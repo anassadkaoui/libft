@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 22:13:44 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 17:48:15 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/17 13:09:47 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// int main() {
-//     const char *haystack = "Hello, world! sadkaoui";
-//     const char *needle = "wkdfk";
-//     size_t len = 12;
-
-//     char *result = ft_strnstr(haystack, needle, len);
-
-//     if (result) {
-//         printf("Found substring: \"%s\"\n", result);
-//     } else {
-//         printf("Substring not found\n");
-//     }
-
-//     return 0;
-// }

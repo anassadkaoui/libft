@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 19:53:14 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/16 13:51:54 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/17 20:01:35 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <stddef.h>
-# include <stdio.h>
-# include <limits.h>
-# include <string.h>
-# include <libc.h>
+# include <unistd.h>
 
 typedef struct s_list
 {

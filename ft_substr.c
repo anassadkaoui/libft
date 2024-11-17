@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 12:17:53 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/12 09:44:42 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/17 12:37:14 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,12 @@ static char	*ft_strncpy(char *dest, const char *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (i < n && src[i] != '\0')
+	while (i < n)
 	{
 		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
 	return (dest);
 }
 

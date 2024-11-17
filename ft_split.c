@@ -6,7 +6,7 @@
 /*   By: asadkaou <asadkaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 13:21:07 by asadkaou          #+#    #+#             */
-/*   Updated: 2024/11/11 13:40:55 by asadkaou         ###   ########.fr       */
+/*   Updated: 2024/11/17 12:47:56 by asadkaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,15 +47,15 @@ static unsigned int	count_words(char const *s, char c)
 
 static int	get_len(const char *s, char c)
 {
-	size_t	i;
+	size_t	length;
 
-	i = 0;
+	length = 0;
 	while (*s && *s != c)
 	{
-		i++;
+		length++;
 		s++;
 	}
-	return (i);
+	return (length);
 }
 
 static char	**re(const char *s, char c, char **res, size_t i)
